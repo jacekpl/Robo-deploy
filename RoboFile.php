@@ -1,7 +1,7 @@
 <?php
 /**
  * This is project's console commands configuration for Robo task runner.
- * Prepared to be user with Silex
+ * Prepared to be used with Silex
  *
  * @see http://robo.li/
  */
@@ -9,12 +9,12 @@
 use Robo\Config;
 class RoboFile extends \Robo\Tasks
 {
-    protected $releaseDate;
-    protected $releaseDir;
-    protected $baseDir = '/var/www/domain.com/';
     protected $host = 'domain.com';
     protected $username = 'jacek';
-    protected $scm = 'git@bitbucket.org:opcode_pl/test.git'
+    protected $scm = 'git@bitbucket.org:opcode_pl/test.git';
+    protected $baseDir = '/var/www/domain.com/';
+    protected $releaseDate;
+    protected $releaseDir;
 
     /**
      * TODO:
